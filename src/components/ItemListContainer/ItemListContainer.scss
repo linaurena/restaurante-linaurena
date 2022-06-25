@@ -1,0 +1,19 @@
+h1 {
+    width: 100%;
+    color: #FFFFFF;
+    margin-top: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: transparent;
+
+    // Media queries
+    @media(min-width: 768px) {
+        margin: 0 auto;
+        padding-top: 4rem;
+        padding-bottom: 40rem;
+        border-radius: 3rem;
+        margin-bottom: 2rem;
+        width: calc(100% - 5.5rem);
+        background-color: rgba(248, 248, 248, 0.04);
+    }
+}
