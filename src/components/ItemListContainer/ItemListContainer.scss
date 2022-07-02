@@ -1,19 +1,25 @@
-h1 {
+.category-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     color: #FFFFFF;
-    margin-top: 4rem;
+    padding-top: 203px;
+    margin-bottom: 5rem;
     font-size: 2rem;
-    text-align: center;
+    //text-align: center;
     background-color: transparent;
 
     // Media queries
     @media(min-width: 768px) {
         margin: 0 auto;
-        padding-top: 4rem;
-        padding-bottom: 40rem;
-        border-radius: 3rem;
-        margin-bottom: 2rem;
+        padding-top: 0;
+        margin-top: 212px;
+        //padding-bottom: 40rem;
+        border-radius: 3rem 3rem 1rem 1rem;
+        margin-bottom: 4rem;
         width: calc(100% - 5.5rem);
         background-color: rgba(248, 248, 248, 0.04);
+        overflow: hidden;
     }
 }

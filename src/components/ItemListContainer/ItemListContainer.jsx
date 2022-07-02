@@ -1,10 +1,9 @@
 import './ItemListContainer.scss';
+import ItemList from './ItemList';
 
-function ItemListContainer(props) {
+function ItemListContainer() {
     return (
-        <>
-            <h1> {props.texto} </h1>
-        </>
+        <ItemList />
     );
 }
 export default ItemListContainer;
