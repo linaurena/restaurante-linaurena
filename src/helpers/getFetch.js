@@ -11,5 +11,5 @@ let products = [
 
 export const gFetch = new Promise(( resolve, reject ) => {
     let condition = true;
-    condition ? setTimeout(() => { resolve(products) }, 2000) : reject('not found')
+    condition ? setTimeout(() => { resolve(products) }, 5000) : reject('not found')
 })

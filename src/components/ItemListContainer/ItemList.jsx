@@ -1,3 +1,4 @@
+import './ItemList.scss';
 import { gFetch } from '../../helpers/getFetch';
 import { useState, useEffect } from 'react';import Item from './Item';
 
@@ -14,7 +15,7 @@ function ItemList() {
 
     return (
         <section className='category-section'>
-            { loading ? <h1>Hi, this is a loader ⏳</h1>
+            { loading ? <h1 className='loader'>Hi, this is a loader ⏳</h1>
             :
             products.map(product => 
                 <Item product={product} key={product.id} />

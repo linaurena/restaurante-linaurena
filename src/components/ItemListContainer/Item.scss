@@ -90,10 +90,15 @@
             height: 2.5rem;
             width: 1.5rem;
             border-radius: 0 0 6rem 0;
-            background-color: #1C1F2D;
+            background-color: #131624;
             bottom: 1.5rem;
             right: 0;
             box-shadow: 0 1.5rem 0 0 #7DA115;
+
+            // Media queries
+            @media(min-width: 1440px) {
+                background-color: #1C1F2D;
+            }
         }
     }
 }
