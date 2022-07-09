@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
 
 function ItemDetailContainer() {
-  const [details, setDetails] = useState([])
+  const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
   const { itemId } = useParams();
   //console.log( itemId)
@@ -12,12 +12,12 @@ function ItemDetailContainer() {
   useEffect(() => {
     if (itemId) {
         getItems // Simulate an API call
-        .then(response => setDetails( response.filter( item => item.id === itemId ) ))
+        .then(response => setProducts( response.filter( item => item.id === itemId ) ))
         .catch(error => console.log( error ))
         .finally(()=> setLoading( false ))
     } else {
         getItems // Simulate an API call
-        .then(response => setDetails( response ))
+        .then(response => setProducts( response ))
         .catch(error => console.log( error ))
         .finally(()=> setLoading( false ))
     }
@@ -27,7 +27,7 @@ function ItemDetailContainer() {
     <section className='category-section'>
         { loading ? <h1 className='loader'>Hi, this a detail loader ⏳</h1>
         :
-        details.map(detail => 
+        products.map(detail => 
           <ItemDetail item={detail} key={itemId} />
         )}
     </section>
