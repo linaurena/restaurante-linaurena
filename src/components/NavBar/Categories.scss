@@ -11,7 +11,7 @@
         margin: 0 auto;
     }
     
-    li {
+    .categories__category {
         display: flex;
         flex-direction: row;
         margin: 0 0.25rem;
@@ -19,13 +19,13 @@
         height: 2.75rem;
         min-width: 2.5rem;
         width: fit-content;
+        text-decoration: none;
 
         background-color: rgba(248, 248, 248, 0.04);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
         border-radius: 8px;
-        cursor: pointer;
 
-        transition: all .2s ease-in-out;
+        transition: all .8s ease-in-out;
 
         .categories {
             &__icon {
@@ -52,6 +52,7 @@
             
             &__name {
                 display: none;
+
                 // Media queries
                 @media(min-width: 768px) {
                     display: flex;

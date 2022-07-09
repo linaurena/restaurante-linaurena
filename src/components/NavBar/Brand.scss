@@ -1,12 +1,15 @@
-.logo {
+.logo-box {
     display: block;
     margin: 0 auto;
     width: 16px;
     height: 19px;
-    cursor: pointer;
 
     // Media queries
     @media(min-width: 768px) {
         align-self: center;
+    }
+
+    .logo {
+        width: 100%;
     }
 }
