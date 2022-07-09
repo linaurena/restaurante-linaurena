@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom';
 import './Item.scss';
 
 function Item({ product }) {
-    const { name, description, pictureUrl } = product
+    const { id, name, description, pictureUrl } = product
 
     return (
         <article className='card'>
             <h2 className='card__name'>{name}</h2>
-            <p className='card__description'>{description} <span>Read more</span></p>
+                <p className='card__description'>{description} <Link to={`/detail/${id}`}><span>Read more</span></Link></p>
             <div 
                 className='card__image' 
                 style={{
@@ -17,7 +18,7 @@ function Item({ product }) {
                 }} 
                 alt="Img product">
             </div>
-            <button className='card__add-btn'>Add</button>
+                <button className='card__add-btn'>Add</button>
         </article>
     )
 }
