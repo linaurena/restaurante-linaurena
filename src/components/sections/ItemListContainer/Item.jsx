@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
 import './Item.scss';
+import { ItemCounter } from './ItemCounter';
 
 function Item({ product }) {
     const { id, name, description, pictureUrl } = product
+
+    const counterFunction = (counter) => {
+        console.log('The value is ', counter)
+    }
 
     return (
         <article className='card'>
@@ -18,7 +23,7 @@ function Item({ product }) {
                 }} 
                 alt="Img product">
             </div>
-                <button className='card__add-btn'>Add</button>
+            <ItemCounter stock={8} initialValue={0} onAdd={counterFunction}/>
         </article>
     )
 }
