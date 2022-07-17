@@ -1,6 +1,6 @@
 
-function ItemDetail({ item }) {
-    const { name, price, description, pictureUrl } = item
+function ItemDetail({ product }) {
+    const { name, price, description, pictureUrl } = product
 
     //console.log(name)
     //console.log(description)

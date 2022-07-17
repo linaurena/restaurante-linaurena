@@ -27,8 +27,8 @@ function ItemDetailContainer() {
     <section className='category-section'>
         { loading ? <h1 className='loader'>Hi, this a detail loader ⏳</h1>
         :
-        products.map(detail => 
-          <ItemDetail item={detail} key={itemId} />
+        products.map(product => 
+          <ItemDetail product={product} key={itemId} />
         )}
     </section>
   )
