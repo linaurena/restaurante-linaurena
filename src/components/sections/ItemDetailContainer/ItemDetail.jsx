@@ -1,3 +1,4 @@
+import { ItemCounter } from "../ItemListContainer/ItemCounter"
 
 function ItemDetail({ product }) {
     const { name, price, description, pictureUrl } = product
@@ -20,7 +21,7 @@ function ItemDetail({ product }) {
                 }} 
                 alt="Img product">
             </div>
-                <button className='card__add-btn'>Add</button>
+                <ItemCounter />
         </article>
     )
 }
