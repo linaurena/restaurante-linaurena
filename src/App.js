@@ -6,7 +6,7 @@ import ItemListContainer from './components/sections/ItemListContainer/ItemListC
 import Cart from './components/sections/Cart/Cart';
 import ItemDetailContainer from './components/sections/ItemDetailContainer/ItemDetailContainer';
 import Error404 from './components/sections/Error404/Error404';
-import { CartContext } from './context/cartContext';
+import { CartContext } from './context/CartContext';
 
 
 
